@@ -13,6 +13,19 @@
     text-shadow: 0.1em 0.1em 0.2em #737373;
     color: #FFFFFF;
 }
+#home .form{
+    background-color: #4fa2a5;
+    opacity: 0.90;
+    width: 480%;
+    max-width: 500px;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+#home .actions{
+    text-align: center;
+    margin-top: 0.5rem;
+    height: 50px;
+}
 .btn{
     background-color: #FAFAFA;
     border-color: #FAFAFA;

@@ -15,9 +15,11 @@ const HomePage = () => {
         <>
             <div id="home">
                     <h1>Home Page</h1>
-                <div className="actions">
-                    <button class="btn" onClick={handleLogout}>Logout</button>
-                </div>
+                <form className="form">
+                    <div className="actions">
+                        <button class="btn" onClick={handleLogout}>Logout</button>
+                    </div>
+                </form>
             </div>
         </>
     )
