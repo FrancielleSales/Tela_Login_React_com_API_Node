@@ -1,12 +1,14 @@
 import {Router} from "express";
 
-import HelloController from "./controllers/HelloController.js";
+import auth from "./middlewares/auth.js"
 import UsersController from "./controllers/UsersController.js"
-
+import SessionsController from "./controllers/SessionsController.js";
 
 const routes = new Router();
 
-routes.get('/hello', HelloController.index);
+routes.post('/sessions', SessionsController.create);
+
+routes.use(auth);
 
 routes.get('/users', UsersController.index);
 routes.get('/users/:id', UsersController.show);

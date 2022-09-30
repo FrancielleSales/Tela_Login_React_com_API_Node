@@ -1,13 +1,45 @@
 {
 	"info": {
-		"_postman_id": "73349ba0-d3bb-4bea-ab05-c9d963870b8f",
+		"_postman_id": "88bc82ca-6eaf-46a9-bce2-5a9697950009",
 		"name": "Users",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21760212"
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Auth",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"franciellesales@gmail.com.br\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "_.base_url/sessions",
+							"host": [
+								"_",
+								"base_url"
+							],
+							"path": [
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create",
 			"request": {
 				"method": "POST",
 				"header": [],
